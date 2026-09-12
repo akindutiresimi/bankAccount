@@ -44,4 +44,11 @@ public class AccountTest {
         account.withdraw(3000);
         assertEquals(2500,account.checkBalance());
     }
+    @Test
+    public void testThatYouCantWithdrawNegativeAmount(){
+
+        Account account = new Account();
+        account.withdraw(-5000);
+        assertEquals(0, account.checkBalance());
+    }
 }
