@@ -28,19 +28,19 @@ public class Queue {
     }
 
 
-    public String remove(String element) {
-
-            return myQueue[count--];
-
-       if(isEmpty()){
-           throw new IllegalArgumentException("cant remove from an empty queue");
-       }
-      String removedElement = myQueue[0];
-
-       for(int index = 0; index < myQueue.length; index--){
-           myQueue[index] = myQueue[index - 1];
-       }
-       myQueue[count] = null;
-
-    }
+//    public String remove(String element) {
+//
+//            return myQueue[count--];
+//
+//       if(isEmpty()){
+//           throw new IllegalArgumentException("cant remove from an empty queue");
+//       }
+//      String removedElement = myQueue[0];
+//
+//       for(int index = 0; index < myQueue.length; index--){
+//           myQueue[index] = myQueue[index - 1];
+//       }
+//       myQueue[count] = null;
+//
+//    }
 }

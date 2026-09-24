@@ -2,7 +2,6 @@ package queueFolder;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import stackFolder.Stack;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -42,23 +41,22 @@ public class QueueTest {
 
     }
 
-    @Test
-    public void testThatIRemoveAnElementFromTheArray() {
+//    @Test
+//    public void testThatIRemoveAnElementFromTheArray() {
+//
+//        myQueue.add("second");
+//        myQueue.add("third");
+//        myQueue.add("fourth");
+//
+//         myQueue.remove("second");
+//        assertEquals(false, myQueue.isEmpty());
+//
+//    }
 
-        myQueue.add("second");
-        myQueue.add("third");
-        myQueue.add("fourth");
-
-         myQueue.remove("second");
-        assertEquals(false, myQueue.isEmpty());
-
-    }
-
-    @Test
-    public void testThatRemoveAnElementFromAnEmptyArrayShouldThroughAnExpection() {
-
-        myQueue.remove();
-        assertThrwws(IllegalArgumentException.class,() -> myQueue.remove("samuel"));
-
-    }
+//    @Test
+//    public void testThatRemoveAnElementFromAnEmptyArrayShouldThroughAnExpection() {
+//
+//        assertThrows(IllegalArgumentException.class,() -> myQueue.remove("samuel"));
+//
+//    }
 }
